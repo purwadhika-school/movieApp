@@ -9,26 +9,26 @@ const Rating = (data) => {
     let Ratings = []
     for (let k = 0; k < 5; k++){
         if (k < data.stars){
-            console.log('dataatat', k)
             Ratings.push(
-                <Text 
-                    style={{ marginLeft: 10 }}
-                    key={k}>A</Text>
+                <Image 
+                    key={k}
+                    style={{ width: 15, height: 15 }}
+                    source={require('./img/star_full.png')} />
             )
         } else {
-            console.log('daaa', k)
             Ratings.push(   
-                <Text 
-                    style={{ marginLeft: 10 }}
-                    key={k}>B</Text>
+                <Image 
+                    key={k}
+                    style={{ width: 15, height: 15 }}
+                    source={require('./img/star_empty.png')} />
             )
         }
     }
 
-    console.log(Ratings)
+    
 
     return (
-        <View style={{ flexDirection: 'row' }}>
+        <View style={{ flexDirection: 'row', marginTop: 10, marginLeft: 10 }}>
             {Ratings}
         </View>
     )
