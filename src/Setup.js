@@ -22,7 +22,7 @@ class Setup extends Component {
     return (
       <View style={{ flex: 1 }}>
         <SectionOne />
-        <SectionTwo />
+        {/* <SectionTwo /> */}
       </View>
     );
   }

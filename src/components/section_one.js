@@ -48,9 +48,9 @@ class SectionOne extends Component {
                                     source={{ uri: data.image }} />
                                 <Text style={{ 
                                     marginTop: 15,
+                                    marginLeft: 10,
                                     fontSize: 15,
-                                    fontWeight: '500',
-                                    textAlign: 'center' }}>{data.movies_title}</Text>
+                                    fontWeight: '500' }}>{data.movies_title}</Text>
                                 <Rating stars={data.rating} />
                             </View>
                         ))
