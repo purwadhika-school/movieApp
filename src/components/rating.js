@@ -3,9 +3,6 @@ import { View, Text, Image, ScrollView } from 'react-native'
 
 
 const Rating = (data) => {
-    console.log(data)
-
-
     let Ratings = []
     for (let k = 0; k < 5; k++){
         if (k < data.stars){
